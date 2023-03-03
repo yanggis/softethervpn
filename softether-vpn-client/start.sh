@@ -7,7 +7,7 @@ VPN_INTERFACE=soft_vpn
 echo "Connect to VPN"
 echo -e "2\n\nAccountConnect $ACCOUNT\n" | /usr/local/vpnclient/vpncmd # Connect Account                                                        
 
-echo "remvoe redirect traffic"
+echo "remove redirect traffic"
 ip route del default via $IP_VPN_PRIVATE
 
 dhclient vpn_$VPN_INTERFACE
