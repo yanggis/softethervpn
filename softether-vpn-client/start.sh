@@ -10,4 +10,4 @@ echo -e "2\n\nAccountConnect $ACCOUNT\n" | /usr/local/vpnclient/vpncmd # Connect
 echo "remvoe redirect traffic"
 ip route del default via $IP_VPN_PRIVATE
 
-dhclient $VPN_INTERFACE
+dhclient vpn_$VPN_INTERFACE
