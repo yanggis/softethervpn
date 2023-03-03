@@ -1,5 +1,3 @@
-/usr/local/vpnclient/stop.sh
-
 #!/bin/bash                                                                                                                                      
 ACCOUNT=vpn
 VPN_INTERFACE=soft_vpn
