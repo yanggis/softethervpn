@@ -1,4 +1,4 @@
-CLIENT_DIR="/usr/local/softether"
+CLIENT_DIR="/usr/local/vpnclient"
 NIC_NAME="soft_vpn"
 ACCOUNT_NAME="softuser"
 VPN_HOST_IPv4="127.0.0.1"
