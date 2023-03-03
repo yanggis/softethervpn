@@ -1,5 +1,5 @@
 CLIENT_DIR="/usr/local/vpnclient"
-NIC_NAME="soft_vpn"
-ACCOUNT_NAME="softuser"
+NIC_NAME="soft"
+ACCOUNT_NAME="vpn"
 VPN_HOST_IPv4="127.0.0.1"
 LOCAL_GATEWAY="192.168.30.1"
