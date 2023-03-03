@@ -22,10 +22,13 @@ $CLIENT_DIR/vpncmd /CLIENT localhost /CMD NicCreate $NIC_NAME
 
 sleep 2
 
+read -p "What is your username? " username
+read -p "What is your password? " userpass
 # Configure the VPN account info and configs
-$CLIENT_DIR/vpncmd /CLIENT localhost /CMD AccountCreate $ACCOUNT_NAME
+$CLIENT_DIR/vpncmd /CLIENT localhost /CMD AccountCreate $username
 
 sleep 2
 
+
 # Configure the VPN server password
-$CLIENT_DIR/vpncmd /CLIENT localhost /CMD AccountPassword $ACCOUNT_NAME
+$CLIENT_DIR/vpncmd /CLIENT localhost /CMD AccountPassword $userpass
