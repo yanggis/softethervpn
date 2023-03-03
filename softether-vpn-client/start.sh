@@ -2,7 +2,7 @@
 
 ACCOUNT=vpn
 VPN_INTERFACE=soft_vpn
-#IP_VPN_PRIVATE=192.168.30.1
+IP_VPN_PRIVATE=192.168.30.1
 
 echo "Connect to VPN"
 echo -e "2\n\nAccountConnect $ACCOUNT\n" | /usr/local/vpnclient/vpncmd # Connect Account                                                        
