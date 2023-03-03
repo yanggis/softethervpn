@@ -1,0 +1,32 @@
+#/etc/init.d/vpnclient
+
+#!/bin/sh
+# chkconfig: 2345 99 01
+# description: SoftEther VPN Client
+DAEMON=/usr/local/vpnclient/vpnclient
+START=/usr/local/vpnclient/start.sh 
+STOP=/usr/local/vpnclient/stop.sh 
+
+case "$1" in
+     start)
+        $DAEMON start
+        sleep 1
+        $START
+     ;;
+     stop)
+        $DAEMON stop
+        $STOP
+     ;;
+     restart)
+        $DAEMON stop
+        sleep 3
+        $DAEMON start
+     ;;
+     *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+     esac
+
+exit 0
+#chmod +x /etc/init.d/vpnclient
+#update-rc.d vpnclient defaults
