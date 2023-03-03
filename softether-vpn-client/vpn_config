@@ -1,5 +1,5 @@
-CLIENT_DIR="/home/intellexlab/softether/vpnclient"
-NIC_NAME="nic1"
+CLIENT_DIR="/usr/local/vpnclient"
+NIC_NAME="soft_vpn"
 ACCOUNT_NAME="cactusvpn"
 VPN_HOST_IPv4="74.91.126.205"
 LOCAL_GATEWAY="192.168.0.1"
