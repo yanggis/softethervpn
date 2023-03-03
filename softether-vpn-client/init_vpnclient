@@ -30,3 +30,4 @@ case "$1" in
 exit 0
 #chmod +x /etc/init.d/vpnclient
 #update-rc.d vpnclient defaults
+#sudo update-rc.d -f vpnclient remove
